@@ -50,7 +50,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: buildandtest
     environment:
-      name: 'Development'
+      name: 'dev'
     steps:
     
     #Download the publish files created in previous job
