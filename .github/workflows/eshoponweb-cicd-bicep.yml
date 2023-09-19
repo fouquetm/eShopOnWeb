@@ -1,7 +1,11 @@
-name: eShopOnWeb Build and Test
+name: eShopOnWeb Build and Test - Bicep
 
 #Triggers
-on: [push, workflow_dispatch]
+on:
+  workflow_dispatch:
+  push:
+    paths-ignore:
+      - '.github/workflows/**'
 
 #Environment variables https://docs.github.com/en/actions/learn-github-actions/environment-variables
 env:
